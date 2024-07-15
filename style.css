@@ -1,0 +1,81 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-color: #f0f0f0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo .hesten {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#logo .serdest {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+}
+
+#content {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+footer {
+    background-color: var(--header-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#settings {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--header-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Dark mode */
+body.dark-mode {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --header-color: #222222;
+}
